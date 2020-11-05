@@ -1,0 +1,77 @@
+<!-- begin pre-loader -->
+<div class="loader">
+    <div class="h-100 d-flex justify-content-center">
+        <div class="align-self-center">
+            <img src="assets/img/loader/loader.svg" alt="loader">
+        </div>
+    </div>
+</div>
+<!-- end pre-loader -->
+<header class="app-header top-bar">
+    <!-- begin navbar -->
+    <nav class="navbar navbar-expand-md">
+        <!-- begin navbar-header -->
+        <div class="navbar-header d-flex align-items-center">
+            <a class="mobile-toggle" onclick="navbar()"><i class="ti ti-align-right"></i></a>
+            <a class="navbar-brand" href="/home">
+                <img src="assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
+                <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
+            </a>
+        </div>
+    </nav>
+    <script>
+        let navbar = () => {
+            if (document.getElementById("navbar1").style.left == "0px")
+                document.getElementById("navbar1").style.left = "-240px";
+            else
+                document.getElementById("navbar1").style.left = "0px";
+        }
+    </script>
+</header>
+<!-- end app-header -->
+<!-- begin app-container -->
+<div class="app-container">
+    <!-- begin app-nabar -->
+    <aside class="app-navbar" id="navbar1">
+        <!-- begin sidebar-nav -->
+        <div class="sidebar-nav scrollbar scroll_light">
+            <ul class="metismenu " id="sidebarNav">
+                <li class="nav-static-title">Admin</li>
+                <li class="active">
+                    <li>
+                        <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">
+                            <i class="nav-icon ti ti-rocket"></i>
+                            <span class="nav-title">Dashboards</span>
+                            <span class="nav-label label label-danger">6</span>
+                        </a>
+                        <uL aria-expanded="false">
+                            <li> <a href='/uy'>Home </a> </li>
+                            <li> <a href='/cours'>Kurs haqida </a> </li>
+                            <li> <a href='/timerpost'>Timer Post</a> </li>
+                            <li> <a href='/cilentpost'>Start Post</a> </li>
+                            <li> <a href="/table">Export Table</a> </li>
+                            <li> <a href="/clientstable">Clients Table </a> </li>
+
+                        </uL>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">
+                            <i class="nav-icon ti ti-info"></i>
+                            <span class="nav-title">Calendar</span>
+                            <span class="nav-label label label-danger">3</span>
+                        </a>
+                        <uL aria-expanded="false">
+                            <li> <a href="/topshriq">Calendar </a> </li>
+                            <li> <a href="/fullcalendar">Full Calendar </a> </li>
+                            <li> <a href="/calendarlist">Calendar List </a> </li>
+                        </uL>
+                    </li>
+
+
+                    <!-- Clients -->
+
+                </li>
+            </ul>
+        </div>
+        <!-- end sidebar-nav -->
+    </aside>
